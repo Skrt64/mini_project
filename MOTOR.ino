@@ -13,8 +13,7 @@ void setup() {
 void loop() {
      if(digitalRead(BUTTON)==LOW) { 
     digitalWrite(MOTOR1, HIGH);
-    digitalWrite(MOTOR2, HIGH); // counterclockwise
-    // 
+    digitalWrite(MOTOR2, HIGH);
     j = j*(-1);
     delay(1000);
     Serial.println(j);
